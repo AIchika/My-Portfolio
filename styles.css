@@ -95,38 +95,6 @@ body {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Language Selector Pop-Up */
-.language-popup {
-    position: fixed;
-    top: 155px;
-    /* 50px below the header */
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 1000;
-}
-
-/* Language Options */
-.language-options {
-    margin-top: 10px;
-    padding: 0;
-    list-style: none;
-    background: #48e2e7;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    display: none;
-    /* Hidden by default */
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: hidden;
-}
-
-/* Show the language options */
-.language-options.show {
-    display: flex;
-}
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -500,11 +468,81 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
- @media screen and (max-width: 768px) {
-    .site-wrap {
-        flex-direction: row;
+
+@media (max-width: 768px) {
+
+    /* Adjust project container layout */
+    .project-container {
+        flex-direction:column;
+        align-items: center;
         height: auto;
-        margin-bottom: 100px;
+        padding: 2.2rem;
+        width: 100%;
+    }
+
+    /* Site Wrapper adjustments */
+    .site-wrap {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    /* Sidebar Navigation adjustments */
+    .site-nav {
+        width: 100%;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .site-nav ul li a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Main Project Display adjustments */
+    .project-main {
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+
+    .project-iframe iframe {
+        height: 180px;
+        width: 100%;
+    }
+
+    /* Social Links adjustments */
+    .social-links {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    /* Title adjustments */
+    .title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* Note section adjustments */
+    .note {
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+
+    .note h3 {
+        font-size: 1rem;
+    }
+
+    .note p {
+        font-size: 0.8rem;
     }
 }
 /* Sidebar Navigation */

@@ -71,12 +71,7 @@ clickableElements.forEach((selector) => {
         el.addEventListener('mouseleave', () => cursor.classList.remove('grow'));
     });
 });
-// languages sellector----------------------------------------------------------------
-document.getElementById("language-select").addEventListener("change", function () {
-    const selectedLanguage = this.value;
-    alert(`Language changed to: ${selectedLanguage}`);
-    // Add logic here to update the website's content or redirect to a localized version
-});
+// sticky navigation----------------------------------------------------------------
 function showProject(projectId) {
     // Prevent the default behavior of scrolling to the top
     event.preventDefault();
@@ -109,7 +104,7 @@ form.addEventListener("submit", async (e) => {
     const formData = new FormData(form);
 
     try {
-        const response = await fetch("submit_form.php", {
+        const response = await fetch("send_mail.php", {  // Update to the new PHP file name
             method: "POST",
             body: formData,
         });

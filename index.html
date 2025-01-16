@@ -32,16 +32,6 @@
             <span></span>
         </div>
     </header>
-    <!-- Language Selector Pop-Up -->
-    <div class="language-popup">
-        <select id="language-select" class="hidden" aria-label="Select Language">
-            <option value="en" selected>🇺🇸</option>
-            <option value="fr">🇫🇷</option>
-            <option value="es">🇪🇸</option>
-            <option value="ja">🇯🇵</option>
-            <option value="zh">🇨🇳</option>
-        </select>
-    </div>
     <main>
     <section id="about-section" class="about-section">
         <!-- Video Frame -->
@@ -226,7 +216,7 @@
                         advice, and seamless organization, it promotes sustainable cooking and smarter food management.</p>
                         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/yDestRuvJZ4cU0n2SCMjq1/Waste-free-App?node-id=22-1168&embed-host=share" allowfullscreen></iframe>
                     </article>
-                    
+            
                 </div>
             </div>
         </div>
@@ -236,7 +226,7 @@
         <h2>Contact Information</h2>
         <p><strong>Address:</strong> <span>〒 943-0831</span>  新潟県上越市中町３町６番２号インペリアルハイツ405</p>
         <p><strong>Phone:</strong> +81 80-9071-0142</p>
-        <p><strong>Email:</strong> chiokechikaife.jp@gmail.com</p>
+        <p><strong>Email:</strong> chikafrancis.jp@gmail.com</p>
         <div class="buttons">
             <a href="file/履歴書 .....（CHIKA） - Google Drive copy.pdf" class="btn">Download CV</a>
             <a href="file/ 職務経歴書__CHIKA copy.pdf" class="btn">Work History</a>
@@ -245,7 +235,7 @@
 
     <div class="contact-form">
         <h2>Your mail will be Acknowledged</h2>
-        <form action="submit_form.php" method="POST">
+        <form action="send_mail.php" method="POST">
             <!-- Full Name and Email in one row -->
             <div class="form-row">
                 <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
@@ -284,26 +274,7 @@
         <div class="copyright">
             &copy; 2022 - 2025 All Rights Reserved | <b class="me">Chikaife</b>
         </div>
-    </footer>
-    
-    <script>
-        // Function to show the selected project iframe
-        function showProject(project) {
-            // Hide all project iframes
-            const iframes = document.querySelectorAll('.project-iframe');
-            iframes.forEach(iframe => iframe.style.display = 'none');
-
-            // Show the selected project iframe
-            document.getElementById(project).style.display = 'block';
-
-            // Update active menu item
-            const menuItems = document.querySelectorAll('.site-nav ul li');
-            menuItems.forEach(item => item.classList.remove('active'));
-            const activeItem = document.querySelector(`.site-nav ul li a[onclick="showProject('${project}')"]`).parentElement;
-            activeItem.classList.add('active');
-        }
-    </script>
-    
+    </footer> 
     <script src="main.js"></script>
         
 </body>
