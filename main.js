@@ -72,6 +72,12 @@ clickableElements.forEach((selector) => {
     });
 });
 // sticky navigation----------------------------------------------------------------
+function hideLoader(iframe) {
+    const loader = iframe.previousElementSibling;
+    if (loader && loader.classList.contains('iframe-loader')) {
+        loader.style.display = 'none';
+    }
+}
 function showProject(projectId) {
     // Prevent the default behavior of scrolling to the top
     event.preventDefault();

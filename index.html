@@ -142,7 +142,11 @@
             <nav class="site-nav">
                 <div class="name">Projects</div>
                 <ul>
-                    <li class="active"><a href="#" onclick="showProject('richclemon')">Richclemon</a></li>
+                    <!-- New project links -->
+                    <li class="active"><a href="#" onclick="showProject('westvox')">West-Vox</a></li>
+                    <li><a href="#" onclick="showProject('flowgenuis')">FlowGenuis</a></li>
+                    <li><a href="#" onclick="showProject('vita')">VITA App</a></li>
+                    <li><a href="#" onclick="showProject('richclemon')">Richclemon</a></li>
                     <li><a href="#" onclick="showProject('wy')">株式会社W&Y</a></li>
                     <li><a href="#" onclick="showProject('avatar')">Avatar/Ads</a></li>
                     <li><a href="#" onclick="showProject('meee')">UX/UI</a></li>
@@ -171,6 +175,43 @@
     
             <!-- Main Project Display -->
             <div id="project-main" class="project-main">
+                <!-- FlowGenuis App -->
+                <div id="flowgenuis" class="project-iframe" style="display: none;">
+                    <h1 class="title">FlowGenuis</h1>
+                    <article>
+                        <h3>Business Marketing Mobile App</h3>
+                        <p>FlowGenuis is a smart business marketing mobile app that helps small businesses boost their visibility using
+                            AI tools, social analytics, and automation.</p>
+                        <div class="iframe-loader">Loading...</div>
+                        <iframe src="https://snack.expo.dev/embed/@your-snack-id" frameborder="0" style="width:100%;height:500px;"
+                            allow="camera; microphone; clipboard-read; clipboard-write"></iframe>
+                    </article>
+                </div>
+                
+                <!-- VITA App -->
+                <div id="vita" class="project-iframe" style="display: none;">
+                    <h1 class="title">VITA - Waste Management</h1>
+                    <article>
+                        <h3>Waste-Free Mobile App</h3>
+                        <p>VITA helps users manage waste sustainably by offering tips, tracking usage, and optimizing disposal practices
+                            using real-time data and reminders.</p>
+                        <div class="iframe-loader">Loading...</div>
+                        <iframe src="https://snack.expo.dev/embed/@your-snack-id" frameborder="0" style="width:100%;height:500px;"
+                            allow="camera; microphone; clipboard-read; clipboard-write"></iframe>
+                    </article>
+                </div>
+            
+                <!-- West-Vox -->
+                <div id="westvox" class="project-iframe" style="display: none;">
+                    <h1 class="title">West-Vox News Blog</h1>
+                    <article>
+                        <h3>Live Website: West-Vox Blog</h3>
+                        <p>A powerful blog and news website offering a mix of local and international news, designed with modern UI and
+                            powered by React.</p>
+                        <iframe src="https://west-vox.netlify.app" style="width: 100%; height: 500px; border: none;"
+                            title="West-Vox Blog"></iframe>
+                    </article>
+                </div>
                 <!-- Default Project -->
                 <div id="richclemon" class="project-iframe">
                     <h1 class="title">Richclemon</h1>
